@@ -1,0 +1,12 @@
+javac -source 11 -target 11 -classpath `hadoop classpath` -d /home/hduser/Documents/Classwork/WordCountProblem/WordCount_output_dir /home/hduser/Documents/Classwork/WordCountProblem/*.java
+jar -cvf WordCount.jar -C /home/hduser/Documents/Classwork/WordCountProblem/WordCount_output_dir .
+
+hdfs dfs -mkdir /WordCount_input
+hdfs dfs -put /home/hduser/Documents/Classwork/WordCountProblem/story.txt /WordCount_input
+
+hadoop jar WordCount.jar WordCount /WordCount_input /WordCount_output (comment: WordCount_output must not exist in hdfs prior to executing this command)
+
+hdfs dfs -ls /WordCount_output
+hdfs dfs -cat /WordCount_output/part-r-00000
+
+
