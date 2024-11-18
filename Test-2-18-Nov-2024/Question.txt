@@ -1,0 +1,11 @@
+Take inputDataTemp-Hash.csv as input.
+
+
+
+A. Develop a Hadoop Application to generate City name and minimum temperature of each city in 24 hours in all readings.
+
+Output needs to be sorted alphabetically according to city name.
+
+
+
+B. Implement a custom counter to count the number of entries not processed by the programme
