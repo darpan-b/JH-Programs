@@ -57,7 +57,7 @@ public class MultipleInputDriver extends Configured implements Tool {
         try {
             result = ToolRunner.run(new Configuration(), new MultipleInputDriver(), args);
             
-            if (0 == result) {
+            if (result == 0) {
                 System.out.println("Job completed successfully...");
             } else {
                 System.out.println("Job failed...");
