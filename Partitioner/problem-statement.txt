@@ -1,0 +1,1 @@
+Q. Find the maximum salary for a particualar gender and age range.
