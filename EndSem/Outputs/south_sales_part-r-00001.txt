@@ -1,0 +1,2 @@
+Clothing	250
+Electronics	100

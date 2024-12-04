@@ -1,0 +1,2 @@
+Books	500
+Electronics	600

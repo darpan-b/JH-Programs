@@ -1,0 +1,2 @@
+Clothing	400
+Electronics	850
